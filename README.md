@@ -92,7 +92,7 @@ This command identifies eligible VMs in an SLT and protects them using the speci
 **Command:**
 
 ```shell
-backupdr_gcevm_migration_tool MigrateToBackupVault \
+./backupdr_gcevm_migration_tool MigrateToBackupVault \
   --slt_name="your-slt-name" \
   --management_server_url="https://your-ms-url.backupdr.googleusercontent.com/" \
   --backup_plan="projects/YOUR_PROJECT/locations/YOUR_LOCATION/backupPlans/your-bp-name" \
@@ -121,7 +121,7 @@ This command removes SLT-based protection from VMs in the Management Console, **
 **Command:**
 
 ```shell
-backupdr_gcevm_migration_tool UnprotectVMsFromManagementConsole \
+./backupdr_gcevm_migration_tool UnprotectVMsFromManagementConsole \
   --slt_name="your-slt-name" \
   --management_server_url="https://your-ms-url.backupdr.googleusercontent.com/" \
   --workload_projects="project1,project2" \
